@@ -1,12 +1,9 @@
 <?php
 
 	/*
-		CAESAR
+		ARGUS
 
-		Author : Michele '0blio' Cisternino
-		Email  : miki.cisternino@gmail.com
-		Github : https://github.com/0blio
-
+		Author : VEXVAIN
 		This project is released under the GPL 3 license.
 	*/
 
