@@ -1,12 +1,9 @@
 <?php
 
 	/*
-		CAESAR
+		ARGUS
 
-		Author : Michele '0blio' Cisternino
-		Email  : miki.cisternino@gmail.com
-		Github : https://github.com/0blio
-	
+		Author : VEXVAIN
 		This project is released under the GPL 3 license. 	
 	*/
 
@@ -16,7 +13,7 @@
 	if (isset($_SESSION['username'])) {
 		header ('Location: shell.php');
 
-	// else if Caesar has not been installed yet
+	// else if Argus has not been installed yet
 	} else if (!file_exists('database/config.php')) {
 		header ('Location: install.php');
 
