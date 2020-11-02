@@ -9,7 +9,7 @@
 	include 'include.php';
 	include 'config.php';
 
-	use Db\Database;
+	use PicoDb\Database;
 
 	$db = new Database([
 		'driver' => 'mysql',
