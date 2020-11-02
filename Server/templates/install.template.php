@@ -1,10 +1,7 @@
 <!-- 
-		CAESAR
+		ARGUS
 
-		Author : Michele '0blio' Cisternino
-		Email  : miki.cisternino@gmail.com
-		Github : https://github.com/0blio
-	
+		Author : VEXVAIN
 		This project is released under the GPL 3 license. 	
 -->
 
@@ -14,7 +11,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=1,initial-scale=1,user-scalable=1" />
 	<link rel='shortcut icon' type='image/x-icon' href='assets/images/favicon.ico' />
-	<title>Caesar</title>
+	<title>Argus</title>
 	
 	<link href="http://fonts.googleapis.com/css?family=Lato:100italic,100,300italic,300,400italic,400,700italic,700,900italic,900" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css" />
@@ -63,14 +60,14 @@
 			<div class="form-group">
    				<div class="input-group">
       				<div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
-					<input type="text" name="username" placeholder="Caesar username" required class="form-control input-lg" />
+					<input type="text" name="username" placeholder="Argus username" required class="form-control input-lg" />
 				</div>
 			</div>
 
 			<div class="form-group">
    				<div class="input-group">
       				<div class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></div>
-					<input type="password" name="password" placeholder="Caesar password" required class="form-control input-lg" />
+					<input type="password" name="password" placeholder="Argus password" required class="form-control input-lg" />
 				</div>
 			</div>
 			<button id="signin" type="submit" name="go" class="btn btn-lg btn-block btn-success">INSTALL</button>
