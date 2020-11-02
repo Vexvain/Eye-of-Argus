@@ -1,10 +1,7 @@
 <!-- 
-		CAESAR
+		ARGUS
 
-		Author : Michele '0blio' Cisternino
-		Email  : miki.cisternino@gmail.com
-		Github : https://github.com/0blio
-	
+		Author : VEXVAIN
 		This project is released under the GPL 3 license. 	
 -->
 
@@ -14,7 +11,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=1,initial-scale=1,user-scalable=1" />
 	<link rel='shortcut icon' type='image/x-icon' href='assets/images/favicon.ico' />
-	<title>Caesar</title>
+	<title>Argus</title>
 	
 	<link href="http://fonts.googleapis.com/css?family=Lato:100italic,100,300italic,300,400italic,400,700italic,700,900italic,900" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css" />
