@@ -1,12 +1,9 @@
 <?php
 
 	/*
-		CAESAR
+		ARGUS
 
-		Author : Michele '0blio' Cisternino
-		Email  : miki.cisternino@gmail.com
-		Github : https://github.com/0blio
-
+		Author : VEXVAIN
 		This project is released under the GPL 3 license.
 	*/
 
@@ -38,12 +35,12 @@
 
 					INSERT INTO `help` (`category`, `command`, `description`) VALUES
 					('h', 'whoami', 'Print username of the current user'),
-					('h', 'destroy', 'Uninstall Caesar from the server deleting files and database'),
+					('h', 'destroy', 'Uninstall Argus from the server deleting files and database'),
 					('h', 'date', 'Print the server date and time'),
 					('h', 'ip', 'Print your public IP'),
 					('h', 'clear', 'Clear the terminal screen'),
 					('h', 'newtab', 'Open a new tab of the terminal'),
-					('h', 'exit', 'Exit from Caesar'),
+					('h', 'exit', 'Exit from Argus'),
 					('h', 'targets', 'List targets'),
 					('h', 'add description ID DESCRIPTION', 'Add description to the specified target'),
 					('h', 'delete target ID', 'Delete the specified target (* for all)'),
