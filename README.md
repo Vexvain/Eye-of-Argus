@@ -8,7 +8,7 @@ Argus is an HTTP RAT that lets you control devices directly from your browser
 * Easy to use :weary:
 * Can be installed on any free web hosting service :weary:
 * Database driven :weary:
-* Only requires a browser :weary: :zany_face:
+* Only requires a browser :weary:
 
 # Requirements
 * PHP 5.6+
